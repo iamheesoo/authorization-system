@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>sign up</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: #dbe2ef;
+            color: #112d4e;
+            font-size: 150%;
+        }
+        #title{
+            font-size: 350%;
+            color: #3f72af;
+            font-weight: bold;
+        }
+        .input{
+            color: #323232;
+        }
+        a{
+            color: #323232;
+        }
+    </style>
+</head>
+<body>
+<p id="title">Sign Up</p>
+
+<form action="/add" method="POST">
+    id : <input type="text" class="input" name="id"> <br>
+    password : <input type="password" class="input" name="password"> <br>
+    <input type="radio" class="input" name="auth" value="ROLE_ADMIN,ROLE_USER"> admin
+    <input type="radio" class="input" name="auth" value="ROLE_USER" checked="checked"> user <br>
+    <button type="submit">Join</button>
+</form> <br>
+
+<a href="/">Sign In 🌈 →</a>
+</body>
+</html>

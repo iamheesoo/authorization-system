@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.w3.org/1999/xhtml"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: #dbe2ef;
+            color: #112d4e;
+            font-size: 150%;
+        }
+        #title{
+            font-size: 350%;
+            color: #3f72af;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+
+        function toAjax() {
+            alert("a");
+            $.ajax({
+                type:"GET",
+                url: '/user/main',
+                beforeSend: function(xhr) {
+                    xhr.setRequestHeader('X-AUTH-TOKEN', document.getElementById("tt").innerText);
+                },
+                success: function() {
+                    alert("success");
+                }
+            });
+            // location.href="user/main";
+        }
+    </script>
+</head>
+<body>
+    <p id="title">User main</p>
+    <button onclick="toAjax()">check my info</button>
+<!--    my token: <p id="tt" th:text="${token}"></p>-->
+<!--    ID : <span sec:authentication="name"></span> <br>-->
+<!--    소유 권한 : <span sec:authentication="authorities"></span> <br>-->
+    ID : <span th:text="${username}"></span>
+    Auth : <span th:text="${auth}"></span>
+
+    <h3>User Info</h3>
+    <p th:text="${userData}"></p>
+</body>
+</html>

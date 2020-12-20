@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <style>
+        body{
+            text-align: center;
+            background-color: #dbe2ef;
+            color: #112d4e;
+            font-size: 150%;
+        }
+        #title{
+            font-size: 350%;
+            color: #3f72af;
+            font-weight: bold;
+        }
+        .input{
+            color: #323232;
+        }
+        a{
+            color: #323232;
+        }
+    </style>
+</head>
+<body>
+<p id="title">Login</p>
+
+<form action="/login" method="POST">
+    ID : <input class="input" type="text" name="username"> <br>
+    PASSWORD : <input class="input" type="password" name="password"> <br>
+    <button type="submit">Login</button>
+</form> <br>
+
+<a href="/signup"> Sign Up 🌈 →</a>
+</body>
+</html>

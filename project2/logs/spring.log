@@ -1,0 +1,36 @@
+2020-12-20 20:43:17.247  INFO 16904 --- [restartedMain] com.example.auth.AuthApplication         : Starting AuthApplication using Java 11.0.9 on DESKTOP-I7GOV60 with PID 16904 (C:\Users\HEESOO\Desktop\project2\build\classes\java\main started by HEESOO in C:\Users\HEESOO\Desktop\project2)
+2020-12-20 20:43:17.249  INFO 16904 --- [restartedMain] com.example.auth.AuthApplication         : No active profile set, falling back to default profiles: default
+2020-12-20 20:43:17.393  INFO 16904 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-20 20:43:17.394  INFO 16904 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-20 20:43:19.210  INFO 16904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-20 20:43:19.363  INFO 16904 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 131 ms. Found 1 JPA repository interfaces.
+2020-12-20 20:43:20.613  INFO 16904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-20 20:43:20.642  INFO 16904 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-20 20:43:20.642  INFO 16904 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2020-12-20 20:43:20.914  INFO 16904 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-20 20:43:20.915  INFO 16904 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3521 ms
+2020-12-20 20:43:21.329  INFO 16904 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-20 20:43:21.419  INFO 16904 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2020-12-20 20:43:21.625  INFO 16904 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-20 20:43:21.819  INFO 16904 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-20 20:43:22.428  INFO 16904 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-20 20:43:22.444  INFO 16904 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-12-20 20:43:23.701  INFO 16904 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-20 20:43:23.718  INFO 16904 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-20 20:43:23.792  INFO 16904 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-20 20:43:24.606  WARN 16904 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-20 20:43:24.950  INFO 16904 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62a7991b, org.springframework.security.web.context.SecurityContextPersistenceFilter@26b85179, org.springframework.security.web.header.HeaderWriterFilter@63f2946b, org.springframework.security.web.authentication.logout.LogoutFilter@54786ca9, com.example.auth.jwt.JwtAuthenticationFilter@73e43c0f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@179da32e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ebe1e01, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44c5ed4b, org.springframework.security.web.session.SessionManagementFilter@4f611d0d, org.springframework.security.web.access.ExceptionTranslationFilter@66ffa546, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@78eb6162]
+2020-12-20 20:43:25.277  INFO 16904 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-20 20:43:25.441  INFO 16904 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-12-20 20:43:25.839  INFO 16904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-20 20:43:25.867  INFO 16904 --- [restartedMain] com.example.auth.AuthApplication         : Started AuthApplication in 9.663 seconds (JVM running for 13.531)
+2020-12-20 20:43:25.991  INFO 16904 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-20 20:43:25.991  INFO 16904 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-20 20:43:25.991  INFO 16904 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2020-12-20 20:43:26.022  INFO 16904 --- [http-nio-8080-exec-1] c.e.auth.jwt.JwtAuthenticationFilter     : doFilter: null
+2020-12-20 20:43:26.679  INFO 16904 --- [http-nio-8080-exec-2] c.e.auth.jwt.JwtAuthenticationFilter     : doFilter: null
+2020-12-20 20:43:30.977  INFO 16904 --- [http-nio-8080-exec-3] c.e.auth.jwt.JwtAuthenticationFilter     : doFilter: null
+2020-12-20 20:43:31.594  INFO 16904 --- [http-nio-8080-exec-3] com.example.auth.UserController          : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYWEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiaWF0IjoxNjA4NDY0NjExLCJleHAiOjE2MDg0NjY0MTF9.NJcXtziv5WdnoBdhCLa0dLh5E0MZU2__uc71FTMJYIA
+2020-12-20 20:43:34.071  INFO 16904 --- [http-nio-8080-exec-4] c.e.auth.jwt.JwtAuthenticationFilter     : doFilter: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYWEiLCJyb2xlcyI6WyJST0xFX1VTRVIiXSwiaWF0IjoxNjA4NDY0NjExLCJleHAiOjE2MDg0NjY0MTF9.NJcXtziv5WdnoBdhCLa0dLh5E0MZU2__uc71FTMJYIA
+2020-12-20 20:43:34.180  INFO 16904 --- [http-nio-8080-exec-4] c.e.auth.jwt.JwtAuthenticationFilter     : [ROLE_USER]  com.example.auth.domain.User@6b59b325 null
+2020-12-20 20:43:34.184  INFO 16904 --- [http-nio-8080-exec-4] com.example.auth.UserController          : usermain

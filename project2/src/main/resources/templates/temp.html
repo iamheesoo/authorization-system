@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>temp</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <style>
+        body{
+            text-align: center;
+            background-color: #dbe2ef;
+            color: #112d4e;
+            font-size: 150%;
+        }
+        #title{
+            font-size: 350%;
+            color: #3f72af;
+            font-weight: bold;
+        }
+        .input{
+            color: #323232;
+        }
+        a{
+            color: #323232;
+        }
+    </style>
+    <script>
+
+        function toAjax() {
+            // alert("a");
+            $.ajax({
+                type:"GET",
+                url: '/user/main',
+                beforeSend: function(xhr) {
+                    xhr.setRequestHeader('X-AUTH-TOKEN', document.getElementById("tt").innerText);
+                },
+                success: function() {
+                    alert("success");
+                },
+                error: function (xhr, desc, err) {
+                    alert("error "+err+" "+desc+" "+xhr.responseText);
+                }
+            });
+            // location.href="user/main";
+        }
+    </script>
+</head>
+<body>
+<p id="title">temp</p>
+
+my token: <p id="tt" th:text="${token}"></p>
+<button onclick="toAjax()">check my info</button>
+<!--<a href="/user/main">Sign In 🌈 →</a>-->
+
+</body>
+</html>
